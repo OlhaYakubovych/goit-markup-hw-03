@@ -12,6 +12,34 @@
   --header-text-color: #212121;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--main-background-color);
@@ -123,14 +151,16 @@ body {
 
 .hero {
   background-color: var(--second-background-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
 }
@@ -142,16 +172,29 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--main-btn-color);
 }
 
 /* -----------------------Особенности--------------------- */
 
+.features-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item + .features-item {
+  margin-left: 30px;
+}
+
 .features-second-title {
+  margin-bottom: 10px;
+
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
@@ -165,7 +208,24 @@ body {
 
 /* -----------------------Род занятий--------------------- */
 
+.about-container {
+  padding-bottom: 94px;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item {
+  width: 370px;
+}
+.about-item + .about-item {
+  margin-left: 30px;
+}
+
 .about-title {
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
