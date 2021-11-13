@@ -152,6 +152,8 @@ body {
 .hero {
   background-color: var(--second-background-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -166,7 +168,11 @@ body {
 }
 
 .hero-btn {
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
   cursor: pointer;
+  min-width: 200px;
+  min-height: 50px;
   background: var(--accent-color);
   font-family: inherit;
   font-weight: bold;
@@ -181,7 +187,6 @@ body {
 
 .features-container {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .features-list {
@@ -209,18 +214,8 @@ body {
 /* -----------------------Род занятий--------------------- */
 
 .about-container {
+  padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.about-list {
-  display: flex;
-}
-
-.about-item {
-  width: 370px;
-}
-.about-item + .about-item {
-  margin-left: 30px;
 }
 
 .about-title {
@@ -232,6 +227,17 @@ body {
   text-align: center;
   color: var(--second-title-color);
 }
+.about-list {
+  display: flex;
+}
+
+.about-item {
+  width: 370px;
+}
+
+.about-item + .about-item {
+  margin-left: 30px;
+}
 
 /* -----------------------Сотрудники-------------------- */
 
@@ -239,7 +245,18 @@ body {
   background: var(--third-background-color);
 }
 
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.team-list {
+  display: flex;
+}
+
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -247,7 +264,19 @@ body {
   color: var(--second-title-color);
 }
 
+.team-item + .team-item {
+  margin-left: 30px;
+}
+
+.team-item-div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-item-title {
+  margin-bottom: 10px;
+
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -257,13 +286,29 @@ body {
 .team-item-text {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   color: var(--main-text-color);
 }
 
 /* -------------------Адресс------------------------ */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--second-background-color);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-item + .footer-item {
+  margin-top: 9px;
+}
+
+.footer-link {
+  display: block;
 }
 
 .footer-logo-accent {
